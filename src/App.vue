@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import QuestionCard from './components/QuestionCard.vue'
 
 
+
 document.title = 'quiz_app';
 
 const startQuiz = ref(false);
@@ -10,6 +11,7 @@ const startQuiz = ref(false);
 
 
 <template>
+
 <div v-if="!startQuiz" class="flex flex-col items-center  m-auto justify-center  h-screen  ">
 <div class=" text-center p-6 text-1xl shadow-2xl p-4">
   <p><b class="text-4xl">Welcome to the Quiz App!</b></p><p> This quiz will test your knowledge across various topics. You will be presented with a series of questions, each followed by multiple-choice options.</p>

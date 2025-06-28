@@ -1,0 +1,52 @@
+/* General style for the options span */
+.options {
+  display: inline-block;
+  font-size: 16px;               /* Set the font size */
+  font-weight: 500;              /* Make the text bold but not too heavy */
+  background-color: #0a358c;
+  opacity: 0.7;    /* Default background */
+  padding: 8px 12px;            /* Add padding inside the span */
+  margin: 4px 0;                /* Margin for spacing between options */
+  border-radius: 8px;           /* Round the corners */
+  transition: all 0.3s ease;
+  width: 70%;                   /* Smooth transition for hover effect */
+  color: white;                 /* Default white text */
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+/* Hover effect on options */
+.options:hover {
+  opacity: 1;                   /* Hover effect to make the options opaque */
+}
+
+/* Disabled state for options */
+.options.disabled {
+  pointer-events: none; /* Prevent clicking */
+  opacity: 0.5; /* Make it appear disabled */
+  background-color: #ccc; /* Gray out the background color */
+  transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Prevent hover effect on disabled options */
+.options.disabled:hover {
+  opacity: 0.5; /* Keep the opacity same on hover */
+  background-color: #ccc; /* Keep background color same */
+  cursor: not-allowed; /* Show not-allowed cursor */
+}
+
+/* Correct answer styling */
+.answer.correct {
+  background-color: green;
+  color: white;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
